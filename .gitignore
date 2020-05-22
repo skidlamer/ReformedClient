@@ -1,0 +1,9 @@
+/app/dist
+/app/node_modules
+/app/*.jsc
+/src/dist
+/src/node_modules
+/src/package-lock.json
+/src/*.jsc
+/package-lock.json
+.DS_Store

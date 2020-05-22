@@ -1,0 +1,57 @@
+<div id="windowHeader">RetardedClient Settings</div>
+<div id="menuWindow" style="overflow-y: auto;" class="stickyHeader">
+    <div id="settHolder">
+        <div class="setHed">RetardedClient Settings</div>
+        <a class="resetRSettings" id="rSettingsReset" onclick= "resetRSettings();">Reset RSettings (Site will refresh)</a>
+        <div class="settName" title="">Change Font (Possible FPS Decrease) <select id="changeFont" onchange="changeValue('changeFont', this.value); setFont(this.value)" class="inputGrey2">
+          <option value="arialB" selected="">Arial Black</option>
+          <option value="impact">Impact</option>
+          <option value="comfortaa">Comfortaa</option>
+          <option value="montserrat">Montserrat</option>
+          <option value="nexa">Nexa</option>
+          <option value="defaultF">Default Font</option></select></div>
+          <div class="settName" title="">Enable R-Badges [Refresh required] <label class="switch" style="margin-left:10px">
+              <input id="showBadges" type="checkbox" onclick="changeValue('showBadges', this.checked);" <%if (showBadges === 'true') { %> checked <% } %>><span class="slider"></span>
+          </label>
+          </div>
+        <div class="settName" title="">Enable Menu FPS & Ping <label class="switch" style="margin-left:10px">
+            <input id="showMFP" type="checkbox" onclick="changeValue('showMFP', this.checked); enableMFP(this.checked)" <%if (showMFP === 'true') { %> checked <% } %>><span class="slider"></span>
+        </label>
+        </div>
+        <div class="settName" title="">Enable Timer Icon <label class="switch" style="margin-left:10px">
+            <input id="showTI" type="checkbox" onclick="changeValue('showTI', this.checked); enableTI(this.checked)" <%if (showTI === 'true') { %> checked <% } %>><span class="slider"></span>
+        </label>
+        </div>
+        <div class="settName" title="">Enable Ammo Icon <label class="switch" style="margin-left:10px">
+            <input id="showAI" type="checkbox" onclick="changeValue('showAI', this.checked); enableAI(this.checked)" <%if (showAI === 'true') { %> checked <% } %>><span class="slider"></span>
+        </label>
+        </div>
+        <div class="settName" title="">Enable Hud Class Icon <label class="switch" style="margin-left:10px">
+            <input id="showHCI" type="checkbox" onclick="changeValue('showHCI', this.checked); enableHCI(this.checked)" <%if (showHCI === 'true') { %> checked <% } %>><span class="slider"></span>
+        </label>
+        </div>
+        <div class="settName" title="">Menu Buttons Color <input type="color" name="color" id="buttonColorsID" style="float:right;margin-top:5px" value="#9eeb56" oninput="changeValue('buttonColors', this.value); setbuttonColor(this.value)"></div>
+        <div class="settName" title="">Menu Font Color <input type="color" name="color" id="mFontColorID" style="float:right;margin-top:5px" oninput="changeValue('mFontColor', this.value); setmFontColor(this.value);"></div>
+        <div class="settName" title="">Menu Window Color <input type="color" name="color" id="mWindowColorsID" style="float:right;margin-top:5px" value="#9eeb56" oninput="changeValue('mWindowColors', this.value); setmWindowColor(this.value); boxmWindowColor();"></div>
+        <div class="settName" title="">Menu Window Color <input type="text" name="color" id="mWindowColorsRGBAID" class="inputGrey2" placeholder="HTML Color Code" value="" oninput="changeValue('mWindowColors', this.value); setmWindowColor(this.value);">
+        </div>
+        <div class="settName" title="">Server Browser Field <input type="text" name="field" id="sBrowserFieldID" class="inputGrey2" placeholder="FFA, TDM, CTF, BURG" value="" oninput="changeValue('sBrowserField', this.value);">
+        </div>
+        <div class="settName" title="">Menu Main Logo <input type="url" name="url" id="MLID" class="inputGrey2" placeholder="Image URL" value="" oninput="changeValue('MLImage', this.value); setMLImage(this.value)">
+        </div>
+        <div class="settName" title="">Menu Profile Icon <input type="url" name="url" id="MPID" class="inputGrey2" placeholder="Image URL" value="" oninput="changeValue('MPImage', this.value); setMPImage(this.value)">
+        </div>
+        <div class="settName" title="">Menu Shop Icon <input type="url" name="url" id="MSID" class="inputGrey2" placeholder="Image URL" value="" oninput="changeValue('MSImage', this.value); setMSImage(this.value)">
+        </div>
+        <div class="settName" title="">Menu Challenge Icon <input type="url" name="url" id="MCID" class="inputGrey2" placeholder="Image URL" value="" oninput="changeValue('MCImage', this.value); setMCImage(this.value)">
+        </div>
+        <div class="settName" title="">Menu Social Icon <input type="url" name="url" id="MSOID" class="inputGrey2" placeholder="Image URL" value="" oninput="changeValue('MSOImage', this.value); setMSOImage(this.value)">
+        </div>
+        <div class="settName" title="">Menu Maps Icon <input type="url" name="url" id="MAID" class="inputGrey2" placeholder="Image URL" value="" oninput="changeValue('MAImage', this.value); setMAImage(this.value)">
+        </div>
+        <div class="settName" title="">Menu Mods Icon <input type="url" name="url" id="MMID" class="inputGrey2" placeholder="Image URL" value="" oninput="changeValue('MMImage', this.value); setMMImage(this.value)">
+        </div>
+        <div class="settName" title="">Menu Settings Icon <input type="url" name="url" id="MSEID" class="inputGrey2" placeholder="Image URL" value="" oninput="changeValue('MSEImage', this.value); setMSEImage(this.value)">
+        </div>
+</div>
+    <div class="button small buttonR" id="altManagerID2" onmouseenter="playTick()" onclick="addNewAccount();">Add Accounts</div> <div class="button small buttonR" id="altManagerID" onmouseenter="playTick()" onclick="altManagerButton()">Saved Accounts</div>

@@ -1,0 +1,53 @@
+{
+  "name": "retardedclient",
+  "version": "2.1.0",
+  "description": "Krunker Client created by ronics",
+  "author": "ronics",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigBoyRonics/ReformedClient.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BigBoyRonics/ReformedClient/issues"
+  },
+  "homepage": "https://github.com/SkidLamer/ReformedClient#readme",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "productName": "Retarded Client",
+    "appId": "retardedclient",
+    "win": {
+      "target": [
+        "portable"
+      ]
+    },
+    "mac": {
+      "category": "public.app-category.games"
+    },
+    "portable": {
+      "artifactName": "RetardedClient.exe"
+    }
+  },
+  "devDependencies": {
+    "electron": "^7.0.0",
+    "electron-builder": "^22.6.1"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "discord-rich-presence": "0.0.8",
+    "ejs": "^3.0.1",
+    "electron-localshortcut": "^3.2.1",
+    "electron-updater": "^4.2.0",
+    "javascript-obfuscator": "^0.18.8",
+    "v8": "^0.1.0",
+    "v8-compile-cache": "^2.1.0",
+    "bytenode": "^1.1.6",
+    "msgpack-lite": "^0.1.26",
+    "node-fetch": "^2.6.0"
+  }
+}
