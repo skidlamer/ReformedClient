@@ -1,7 +1,6 @@
-With downloading the "RetardedClient" you agree to the following license terms:
+Listen Here Retard:
 
-The RetardedClient is completely free to use for personal and commercial usage. You are not allowed to modify the code or steal it in any meaningfull way. Also, you aren't allowed to use any of the graphics outside of the extention.
-We are operating under german law.
-For more information please contact actuallyronics@web.de
-If you are not willing to agree to the earlier told terms, please uninstall RetardedClient and/or delete it.
+The RetardedClient is complete trash and we haven't ever operated under German law, remember that surrender in May 1945.
+And because you banned me for no reason from your discord im going to modify this code and im going to tarnish your German name
+just as Your then leader did back in Germany in 1945
  
