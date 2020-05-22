@@ -34,20 +34,20 @@
     }
   },
   "devDependencies": {
-    "electron": "^7.0.0",
+    "electron": "^6.0.0",
     "electron-builder": "^22.6.1"
   },
   "dependencies": {
+    "bytenode": "^1.1.6",
     "crypto": "^1.0.1",
     "discord-rich-presence": "0.0.8",
     "ejs": "^3.0.1",
     "electron-localshortcut": "^3.2.1",
     "electron-updater": "^4.2.0",
-    "javascript-obfuscator": "^0.18.8",
-    "v8": "^0.1.0",
-    "v8-compile-cache": "^2.1.0",
-    "bytenode": "^1.1.6",
+    "javascript-obfuscator": "^0.28.2",
     "msgpack-lite": "^0.1.26",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "v8": "^0.1.0",
+    "v8-compile-cache": "^2.1.0"
   }
 }
